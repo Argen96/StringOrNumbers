@@ -11,8 +11,8 @@ function typeOfTheContentFile(array){
  } else if( stringsType){
   return new Set(array);
   }else{
-  return 'The elements in the file should be all or string or number';
+ throw new Error('The elements in the file should contain only strings or numbers');
  }
 }
 
-export default typeOfTheContentFile
+export default typeOfTheContentFile;
