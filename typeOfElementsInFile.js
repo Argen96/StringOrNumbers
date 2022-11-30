@@ -6,8 +6,8 @@ function typeOfTheContentFile(array){
   const stringsType = array.every((elements)=>typeof (elements) ==='string' && isNaN(Number(elements)));
 
    if(numbersType) {
-    const sumoftheElemnts = array.reduce((acc,values)=>acc+Number(values),0);
-    return sumoftheElemnts; 
+    const sumoftheElements = array.reduce((acc,values)=>acc+Number(values),0);
+    return sumoftheElements; 
    } 
    else if(stringsType) {
     return new Set(array);
