@@ -2,16 +2,16 @@
 
 function typeOfTheContentFile(array){
   
-  const numbersType = array.every((elements)=> typeof Number(elements)==='number' && !isNaN(Number(elements)));
+  const numbersType = array.every((elements)=> typeof Number(elements) ==='number' && !isNaN(Number(elements)));
   const stringsType = array.every((elements)=>typeof (elements) ==='string' && isNaN(Number(elements)));
 
-  if(numbersType){
+   if(numbersType){
    const sumoftheElemnts = array.reduce((acc,values)=>acc+Number(values),0);
    return sumoftheElemnts; 
  } else if( stringsType){
-  return new Set(array);
+   return new Set(array);
   }else{
- throw new Error('The elements in the file should contain only strings or numbers');
+  throw new Error('The elements in the file should contain only strings or numbers');
  }
 }
 
