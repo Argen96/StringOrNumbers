@@ -12,7 +12,7 @@ function typeOfTheContentFile(array){
    else if(stringsType) {
     return new Set(array);
    }
-   else{
+   else {
     throw new Error('The elements in the file should contain only strings or numbers');
    }
 }
