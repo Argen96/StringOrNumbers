@@ -1,8 +1,8 @@
 {
     "name": "my-project",
-    "main": "index.js",
+    "main": "./index.js",
     "type": "module",
     "scripts": {
-        "dev": "node index.js"
+        "dev": "node ./index.js"
     }
 }
